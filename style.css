@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ec992b31 0%, #eb67404b 100%);
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#container3D {
+    flex: 1;
+    height: 100vh;
+}
+
+#infoPanel {
+    width: 20vw;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Cacher le bandeau sur mobile */
+@media (max-width: 768px) {
+    #infoPanel {
+        display: none;
+    }
+}
