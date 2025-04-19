@@ -1,4 +1,4 @@
-# DiffusionModel3D
+# [DiffusionModel3D](https://paulquidev.github.io/DiffusionModel3D/)
 Ce projet est une représentation 3D interactive du fonctionnement d’un modèle de diffusion, une technologie utilisée pour générer des images à partir d’un bruit aléatoire (comme dans Stable Diffusion ou DALL·E).
 
 Il permet de visualiser étape par étape comment une image se construit :
@@ -51,14 +51,13 @@ Les différents blocs dans la scène représentent les couches du modèle (encod
 
 ## 📷 Aperçu
 
-> Une série de blocs (cubes) représente les opérations du modèle. Une animation illustre comment le bruit se transforme en image claire à travers des étapes de traitement neurone par neurone. L'utilisateur peut explorer et comprendre chaque composant du pipeline.
+![image](https://github.com/user-attachments/assets/c7166250-f497-4b89-9a9c-43fdef772eff)
+
 
 ## 🚀 Lancement
 
-1. Clonez le dépôt
-2. Ouvrez le fichier HTML dans un navigateur supportant WebGL (Chrome, Firefox, etc.)
-3. Interagissez avec les blocs 3D et survolez pour obtenir les détails.
+1. Cliquer  [ici](https://paulquidev.github.io/DiffusionModel3D/)
 
 ---
 
-> Ce projet est pour **comprendre visuellement le fonctionnement des modèles de génération d'images IA**. 
+> Ce projet est pour **comprendre visuellement le fonctionnement des modèles de génération d'images **. 
