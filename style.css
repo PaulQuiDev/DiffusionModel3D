@@ -24,15 +24,49 @@ body, html {
 }
 
 #infoPanel {
-    width: 20vw;
+    width: 22vw;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+#infoText {
+    line-height: 1.4;
+    font-size: 1em;
+    margin: auto 0; /* magie ici : centre verticalement le texte s’il tient */
+}
+
+
+
+#rotateMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    z-index: 9999;
+    display: none; /* Masqué par défaut */
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
+
+#rotateMessage .popup {
+    font-size: 1.5em;
+    background: #222;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid #fff;
+}
+
 
 /* Cacher le bandeau sur mobile */
 @media (max-width: 768px) {
