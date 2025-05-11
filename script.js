@@ -529,6 +529,23 @@ function onMouseMove(event) {
         infoText.innerText = "Survolez un élément pour voir les détails.";
     }
 }
+function checkOrientation() {
+    const rotateMessage = document.getElementById("rotateMessage");
+
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const isSmallScreen = window.innerWidth < 700; // seuil que tu peux ajuster (ex : < 800, < 1000…)
+
+    if (isPortrait && isSmallScreen) {
+        rotateMessage.style.display = "flex";
+    } else {
+        rotateMessage.style.display = "none";
+    }
+}
+
+window.addEventListener('load', checkOrientation);
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('orientationchange', checkOrientation);
+
 
 // Ajouter l'écouteur d'événement
 window.addEventListener('mousemove', onMouseMove);
